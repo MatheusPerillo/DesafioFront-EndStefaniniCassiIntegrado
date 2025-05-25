@@ -1,0 +1,153 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #f9f9f9;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-wrapper {
+  flex: 1;
+}
+
+p {
+  font-size: 22px;
+}
+
+li {
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+button {
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-azul {
+  background-color: #003057;
+  border-color: #003057;
+  color: white;
+}
+
+.btn-azul:hover {
+  background-color: #FCFC1B;
+  border-color: #FCFC1B;
+  color: #002D4B;
+}
+
+.btn-outline-azul {
+  background-color: white;
+  border-color: #003057;
+  color: #003057;
+}
+
+.btn-outline-azul:hover {
+  background-color: #002D4B;
+  color: white;
+}
+
+
+.lateral-80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.bg-f9 {
+  background-color: #f9f9f9;
+}
+
+
+.text-blue {
+  color: #002D4B;
+}
+
+.text-gray-bold {
+  color: #2D2D2D;
+  font-weight: 700;
+}
+
+.text-gray-light {
+  color: #2D2D2D;
+  font-weight: 400;
+}
+
+.bg-footer {
+  background-color: #002D4B;
+}
+
+.icons {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 24px;
+  gap: 24px;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+
+@media (max-width: 992px) {
+  .lateral-80 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .hide-on-1250 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .texto-informativo {
+    font-size: 18px !important;
+    text-align: justify;
+  }
+
+  .texto-informativo h5 {
+    font-size: 24px;
+  }
+
+  .imagem-informativa {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .bloco-informativo {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .btns-responsivos {
+    margin-bottom: 0rem !important;
+    /* reduz de mb-5 (3rem) para mb-3 (1rem) */
+  }
+}
